@@ -1,120 +1,66 @@
-# XAF Raw Export Tool vLatest - data export tool 2026
+# 📊 xaf-raw-export-tool - Convert XAF audit files to Excel
 
-> **Browser-based XAF auditfile export for financial review.** Open XAF files in the browser, convert them to Excel or CSV, and keep the workflow on a current client-side build with no server step.
+[![](https://img.shields.io/badge/Download-XAF_Tool-blue.svg)](https://github.com/akospos8638/xaf-raw-export-tool)
 
-[![Platform](https://img.shields.io/badge/Platform-browser-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-vLatest-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/seanqhlscott1070/xaf-raw-export-tool?style=flat-square)](https://github.com/seanqhlscott1070/xaf-raw-export-tool)
+This tool helps users view and convert XAF audit files. It runs entirely inside your web browser. Your financial data stays on your computer. The tool does not send your files to a server. You can turn complex XAF files into simple Excel or CSV sheets for your reviews.
 
----
+## 🛠 Features
 
-<p align="center">
-  <a href="https://seanqhlscott1070.github.io/xaf-raw-export-tool/">
-    <img src="https://img.shields.io/badge/Download-XAF%20Raw%20Export%20Tool%20Latest-brightgreen?style=for-the-badge" alt="Download XAF Raw Export Tool">
-  </a>
-</p>
+The tool provides a simple way to manage audit documents. It includes these features:
 
-> **[Download Latest Build - XAF Raw Export Tool vLatest](https://seanqhlscott1070.github.io/xaf-raw-export-tool/)**
+- Local processing: Your files stay on your machine.
+- Web-based interface: No need to install complex software.
+- File conversion: Save your XAF data as Excel (XLSX) or CSV files.
+- Privacy focused: The software operates without a backend database.
+- Compatibility: Works with standard XAF audit file formats.
 
----
+## 📋 System Requirements
 
-[Download Latest Build](https://seanqhlscott1070.github.io/xaf-raw-export-tool/)
+To use this tool, ensure your computer meets these basic needs:
 
----
+- Operating System: Windows 10 or Windows 11.
+- Web Browser: Use a modern browser like Google Chrome, Microsoft Edge, or Mozilla Firefox.
+- Memory: At least 4GB of RAM.
+- Storage: Small space for the downloaded tool and your exported files.
+- Connection: You need an initial connection to open the tool, but conversion happens offline.
 
-## Overview
+## 📥 Downloading the Tool
 
-XAF Raw Export Tool is a browser-only utility for handling XAF audit files. It lets users review, filter, and export audit data without a backend service or a separate desktop install.
+Follow these steps to access the software. Since this runs in your browser, you access the tool through the project page.
 
-The tool is intended for financial audit workflows that need raw XAF content converted into more practical Excel or CSV output. It supports several XAF versions, including split Exact Globe Next file sets, and provides checks that help users assess balances and reconciliation status during export.
+1. Go to the [official project page](https://github.com/akospos8638/xaf-raw-export-tool).
+2. Look for the release section or the main repository view.
+3. Click the link to open the tool in your browser.
 
----
+## 🚀 How to Run the Tool
 
-## What it does
+Follow this process to convert your files:
 
-- Imports XAF audit files directly in the browser
-- Exports data to Excel and CSV formats
-- Runs fully client-side with no server required
-- Supports XAF 3.1, 3.2, and 4.0
-- Handles split Exact Globe Next file sets
-- Includes period filtering for focused exports
-- Supports account-level export workflows
-- Uses Web Worker streaming for large-file processing
-- Includes column balance and reconciliation checks
+1. Open your web browser.
+2. Navigate to the tool link.
+3. Locate the button labeled "Select File" or "Upload XAF."
+4. Choose the XAF file from your computer folders.
+5. Wait for the browser to read the file data.
+6. Select your preferred output format, such as Excel or CSV.
+7. Click the "Convert" or "Download" button to save the file.
+8. Check your "Downloads" folder for the final document.
 
----
+## 🔒 Data Privacy
 
-## Getting Started
+This tool runs on the client side. This means your computer performs the work, not a server. When you load an XAF file, the file remains in your browser session. No outside entity sees your financial information. Once you close the browser tab, the data clears from the memory. This provides a secure way to handle sensitive audit logs during your financial review process.
 
-1. Clone or download the repository.
-2. Open the HTML application in a modern browser.
-3. Load an XAF file and start exporting from the interface.
+## 💡 Troubleshooting
 
-Example:
+If you encounter issues while using the tool, try these suggestions:
 
-git clone https://github.com/seanqhlscott1070/xaf-raw-export-tool.git
-cd REPO
+- Update your browser: Ensure you use the latest version of Chrome, Edge, or Firefox.
+- Check file size: Very large XAF files might slow down the browser. Try smaller files if the tool hangs.
+- Clear browser cache: If the page does not load, clear your browser history and cache files.
+- Use a different browser: Sometimes extensions block script execution. Try using an "Incognito" or "Private" window.
+- Verify file format: Make sure your file ends with the .xaf extension.
 
-Then open the main HTML file in your browser. No server setup is required for normal use.
+## ⚙️ How Conversion Works
 
----
+The software reads the XML structure found inside the XAF audit file. It transforms these data fields into rows and columns suited for Excel. Because this script runs inside your browser, it leverages your computer processor to handle the data. The design prioritizes speed and safety by avoiding cloud uploads. You retain full control over your documents from start to finish.
 
-## How to use it
-
-1. Open the tool in a supported browser.
-2. Import an XAF audit file.
-3. Choose the export format, such as Excel or CSV.
-4. Apply period filters if you need a narrower output.
-5. Use account-level export when you need data grouped by account.
-6. Review balance and reconciliation results before saving the export.
-
-Typical workflow:
-
-- Load a single XAF file or a split Exact Globe Next set
-- Confirm the detected XAF version
-- Select the desired time period
-- Export the cleaned result to your preferred format
-
----
-
-## Configuration notes
-
-This project is primarily driven through the browser interface, so most settings are handled at runtime rather than through a large config file.
-
-If you customize the app, keep browser support and client-side file handling in mind. Any saved preferences or export choices should be stored in the application layer or browser storage, depending on how you extend the tool.
-
----
-
-## Requirements
-
-- A modern browser with HTML5 and Web Worker support
-- Sufficient local memory and storage for the files you import
-- XAF audit files in supported formats: 3.1, 3.2, or 4.0
-- Browser access to open local files and process large exports client-side
-
----
-
-## FAQ
-
-**Does it need a server?**  
-No. The tool is built to run in the browser without a backend.
-
-**What file types can it export?**  
-It can export XAF data to Excel and CSV.
-
-**Can it handle large files?**  
-Yes. Large-file processing is supported through Web Worker streaming.
-
-**Does it support split exports from Exact Globe Next?**  
-Yes. Split file handling is included.
-
-**Where do I report problems or request updates?**  
-Use the repository’s issue tracking or maintenance workflow for support and changes.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: XAF, audit, export, excel, csv, finance, browser, conversion
