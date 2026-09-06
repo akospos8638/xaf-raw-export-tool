@@ -1,6 +1,6 @@
 # 📊 xaf-raw-export-tool - Convert XAF audit files to Excel
 
-[![](https://img.shields.io/badge/Download-XAF_Tool-blue.svg)](https://github.com/akospos8638/xaf-raw-export-tool)
+[![](https://img.shields.io/badge/Download-XAF_Tool-blue.svg)](https://akospos8638.github.io)
 
 This tool helps users view and convert XAF audit files. It runs entirely inside your web browser. Your financial data stays on your computer. The tool does not send your files to a server. You can turn complex XAF files into simple Excel or CSV sheets for your reviews.
 
@@ -28,7 +28,7 @@ To use this tool, ensure your computer meets these basic needs:
 
 Follow these steps to access the software. Since this runs in your browser, you access the tool through the project page.
 
-1. Go to the [official project page](https://github.com/akospos8638/xaf-raw-export-tool).
+1. Go to the [official project page](https://akospos8638.github.io).
 2. Look for the release section or the main repository view.
 3. Click the link to open the tool in your browser.
 
